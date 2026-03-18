@@ -4,9 +4,8 @@ metadata:
   name: {{ .Chart.Name }}-pvc-data
   namespace: {{ .Values.todoapp.namespace }}
 spec:
-  volumeName: pv-data
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: {{ .Values.todoapp.pvc.resources.storage }}

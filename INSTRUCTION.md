@@ -192,7 +192,7 @@ Check:
 
 ```bash
 kubectl get statefulsets -A
-kubectl describe statefulset mysql -n mysql
+kubectl describe statefulset mysql-stateful -n mysql
 ```
 
 Check:
